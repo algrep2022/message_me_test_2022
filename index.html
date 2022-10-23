@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges mini projects</title>
+
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="getAgeInDays()">click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2: Genarate cat</h2>
+        <button class="btn btn-success" onclick="generateCat()">Genarate cat</button>   
+        <div class="flex-box-container-2">
+         <div id="img-cat-gen"></div>
+            
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge : Rock Paper Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" width="150" height="150" alt="" onclick="rpsGame(this)">
+            <img id="paper" src="assets/images/notebook-paper-clipart-loose_leaf_paper-800px.png" width="150" height="150" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="assets/images/scissors hand.jpg" width="150" height="150" alt="" onclick="rpsGame(this)">
+
+        </div>
+    </div>
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4:Change the color of all buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>            
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Youtube!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2>Challenge 5:Blackjack</h2>        
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="you-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-lg btn-danger mr-2" id="blackjack-dealer-button">Dealer</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
